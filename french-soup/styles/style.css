@@ -1,9 +1,63 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
+/* h1, body, html, main {
   margin: 0;
-}
+} */
 /*Import the font and set the default size*/
-html {
+/* html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
+} */
+
+
+.image-container {
+  position: relative;
+}
+
+.background-image {
+  position: relative;
+  z-index: -1;
+  height: 700px;
+  width: 1330px;
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  transform: translate(40%, -380%);
+}
+
+.article {
+  margin: 10px 10px;
+  padding: 60px 80px;
+}
+
+.description {
+  font-size: 23px;
+}
+
+.recipe-info-container,
+.cooking-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid gray;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.ingredients,
+.direction {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.recipe-list, .direction-list {
+  font-size: 23px;
 }
